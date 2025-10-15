@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "kiwi ai importer",
+  "version": "1.0",
+  "description": "Import Chub.AI, CharacterTavern, and Janitor.AI characters into kiwi.ai",
+
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "kiwi.ai importer"
+  }
+}
