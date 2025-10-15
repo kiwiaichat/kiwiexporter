@@ -14,12 +14,7 @@
     "https://*/*"
   ],
 
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "run_at": "document_end"
-    }
-  ],
+
 
   "action": {
     "default_popup": "popup.html",
